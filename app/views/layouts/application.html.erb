@@ -11,25 +11,25 @@
 
   <body>
 <header class="row">
-      <%=link_to root_path do %>
-        <div class="col-3">
-        <div class="circle">
+  <div class="col-3">
+    <%= link_to root_path, class: 'logo' do %>
+      <div class="circle">
         <br />
         You know
         <br />
-          you need
-          <br />
-          to code
-        </div>
-        <% end %>
+        you need
+        <br />
+        to code
       </div>
-      <div class="col-4 slogan">
-        Splurting out unsolicited advice about entrepreneurship since 2016
-      </div>
-      <div class="col-5 links">
-        <%= link_to 'Contribute', 'new_quote_path' %>
-        <%= link_to 'About', '#' %>
-      </div>
+    <% end %>
+  </div>
+  <div class="col-4 slogan">
+    Splurting out unsolicited advice about entrepreneurship since 2016
+  </div>
+  <div class="col-5 links">
+    <%= link_to 'Contribute', new_quote_path %>
+    <%= link_to 'About', about_path %>
+  </div>
 </header>
 
 <hr />
